@@ -15,7 +15,15 @@
                     <label for="inputNombre">Nombre completo:</label>
                 </td>
                 <td>
-                    <input type="text" id="inputNombre" placeholder="Ingrese su nombre" required> 
+                    <input type="text" 
+                    id="inputNombre" 
+                    placeholder="Ingrese su nombre" 
+                    required
+                    pattern="{a-z}"
+                    minlength="4"
+                    maxlength="7"
+                    pattern="{a-z}{1,15}"
+                   /> 
                 </td>
             </tr>
 <!-- input edad -->
@@ -24,7 +32,10 @@
                     <label for="inputEdad">Edad:</label>
                 </td>
                 <td>
-                    <input type="number" id="inputEdad" placeholder="Ingrese su edad">
+                    <input type="number" id="inputEdad" placeholder="Ingrese su edad"
+                    min="1"
+                    max="10"
+                    >
                 </td>
             </tr>
 <!-- input para fecha -->
